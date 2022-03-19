@@ -18,5 +18,51 @@
     }    
 }
 
-/* main body background*/
+/* main card flex container*/
+.cardFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    max-height: 697px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* top background image*/
+.heroImage {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    max-height: 220px;
+    width: auto;
+}
+
+.cardFlex p {
+    max-width: 60%;
+    font-family: 'specimen', sans-serif;
+    font-size: 1em;
+}
+
+/* flex box for the annual price information*/
+.priceFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    background-color: #F7F9FF;
+    border-radius: 8px;    
+}
+
+/* a child flex container  of priceFlex for the annual price to be displayed in a column*/
+.annualPriceFlex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.change {
+    justify-self: center;
+}
 
