@@ -18,6 +18,11 @@
     }    
 }
 
+.body {
+    display: grid;
+}
+
+
 /* main card flex container*/
 .cardFlex {
     display: flex;
@@ -28,6 +33,10 @@
     height: auto;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
+    margin-bottom: 2em;
+    justify-self: center;
+    align-self: center;
+
 }
 
 /* top background image*/
@@ -50,7 +59,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    width: 374px;
+    width: 354px;
     height: 98px;
     background-color: #F7F9FF;
     border-radius: 8px;
@@ -61,7 +70,7 @@
 .annualPriceFlex {
     display: flex;
     flex-direction: column;
-    margin: 0 30px;
+    margin: 0 10px 0 20px;
     font-size: 1em;
 
 }
@@ -72,10 +81,44 @@
     margin-left: auto;
     margin-right: 20px;
     font-size: 1em;
+    cursor: pointer;
+    color: #382AE1;
+}
+
+.change:hover {
+    color: #698DFF;
+    text-decoration: none;
 }
 
 /* music not icon in price flex container*/
 .musicNote {
     margin-left: 20px;
+}
+
+/* payment button*/
+.paymentButton {
+    cursor: pointer;
+    width: 354px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #382AE1;
+    color: #F7F9FF;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.paymentButton:hover {
+    background-color: #698DFF;
+}
+
+.cancelButton {
+    text-decoration: none;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: #717FA6;
+}
+
+.cancelButton:hover {
+    color: #231F20;
 }
 
